@@ -71,7 +71,14 @@ Run these commands to setup your donkey car app on your car's raspberry pi.
    ```bash 
    python drive.py
    ```
+# Setup RC Controller
 
+We will be using a Arduino Pro Micro to emulate the PS3 joystick.  This will allow the use of the RC transmitter that came with your car during training.  More details to come.
+
+* [ArduinoJoystickLibrary]https://github.com/MHeironimus/ArduinoJoystickLibrary
+* [DonkeyPart PS3/PS4 Game Controller]https://github.com/autorope/donkeypart_ps3_controller
+* Don't worry about any of the Bluetooth stuff, not using it.
+* Steering will be on Axis 0 and Throttle on Axis 4
 
 # Train an autopilot.
 
