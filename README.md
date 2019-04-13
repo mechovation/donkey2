@@ -11,20 +11,22 @@ This is my method to use the Donkey Car, derived from the autorope/donkey2.
 
 2. Flash MicroSD card (16-32GB) using your favorite tool.  [balenaEtcher](https://www.balena.io/etcher/) seems to be popular.
 3. Configure wireless networking, in the /boot partition create wpa_supplicant file containing:
-  ```country=us
-   update_config=1
-   ctrl_interface=/var/run/wpa_supplicant
+ ```bash
+ country=us
+ update_config=1
+ ctrl_interface=/var/run/wpa_supplicant
 
-   network={
-   scan_ssid=1
-   ssid="MyNetworkSSID"
-   psk="Pa55w0rd1234"
-   }
-   ```
+ network={
+ scan_ssid=1
+ ssid="MyNetworkSSID"
+ psk="Pa55w0rd1234"
+ }
+ ```
 4.  Enable SSH by creating an empty file in /boot named "ssh"
 5. First boot, ssh to your Pi, user:pi password:raspberry  (Need more newbie help here?)
 6. Run raspi-config as super user
-```sudo raspi-config
+```bash 
+sudo raspi-config
 ```
 * Change hostname
 * Change password
@@ -33,7 +35,8 @@ This is my method to use the Donkey Car, derived from the autorope/donkey2.
   > Enable I2C
 * Advanced: Expaand Partition
 * Finish & Reboot
-``` sudo shutdown -r now
+```bash
+sudo shutdown -r now
 ```
 # Get driving.
 
