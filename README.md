@@ -7,8 +7,21 @@ This is my method to use the Donkey Car, derived from the autorope/donkey2.
 
 # Starting a fresh Raspbian-Lite installation
 
-* [Download Raspbian-Stretch-Lite](https://www.raspberrypi.org/downloads/raspbian/)
-* Flash MicroSD card (16-32GB) using your favorite tool.  [balenaEtcher](https://www.balena.io/etcher/) seems to be popular.
+1. [Download Raspbian-Stretch-Lite](https://www.raspberrypi.org/downloads/raspbian/)
+
+2. Flash MicroSD card (16-32GB) using your favorite tool.  [balenaEtcher](https://www.balena.io/etcher/) seems to be popular.
+3. Configure wireless networking, in the /boot partition create wpa_supplicant file containing:
+  ```country=us
+   update_config=1
+   ctrl_interface=/var/run/wpa_supplicant
+
+   network={
+   scan_ssid=1
+   ssid="MyNetworkSSID"
+   psk="Pa55w0rd1234"
+   }
+   ```
+4.  Enable SSH by creating an empty file in /boot named "ssh"
 
 # Get driving.
 
