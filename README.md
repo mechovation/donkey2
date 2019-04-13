@@ -22,7 +22,19 @@ This is my method to use the Donkey Car, derived from the autorope/donkey2.
    }
    ```
 4.  Enable SSH by creating an empty file in /boot named "ssh"
-
+5. First boot, ssh to your Pi, user:pi password:raspberry  (Need more newbie help here?)
+6. Run raspi-config as super user
+```sudo raspi-config
+```
+* Change hostname
+* Change password
+* Interface Options
+  > Enable Camera
+  > Enable I2C
+* Advanced: Expaand Partition
+* Finish & Reboot
+``` sudo shutdown -r now
+```
 # Get driving.
 
 Run these commands to setup your donkey car app on your car's raspberry pi.
