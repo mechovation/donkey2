@@ -94,7 +94,6 @@ We will be using a Arduino Pro Micro to emulate the PS3 joystick.  This will all
 Here are the steps to train an autopilot on your computer after you've transfered the
 the tubs from your car's pi to your laptop. 
 
-
 1. Create and activate your virtual environment.
    ```bash
    virtualenv env --python=python3
@@ -112,3 +111,4 @@ the tubs from your car's pi to your laptop.
    ```bash
     python train.py /path/to/folder/with/tubs/*
     ```
+4.  Planning to work up some note on using Docker Tensorflow environment for training.  Stay Tuned.
