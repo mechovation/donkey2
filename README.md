@@ -33,7 +33,7 @@ sudo raspi-config
 * Interface Options
   * Enable Camera
   * Enable I2C
-* Advanced: Expaand Partition
+* Advanced: Expand Partition
 * Finish & Reboot
 ```bash
 sudo shutdown -r now
