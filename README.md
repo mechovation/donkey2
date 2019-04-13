@@ -31,8 +31,8 @@ sudo raspi-config
 * Change hostname
 * Change password
 * Interface Options
-  > Enable Camera
-  > Enable I2C
+  * Enable Camera
+  * Enable I2C
 * Advanced: Expaand Partition
 * Finish & Reboot
 ```bash
