@@ -79,6 +79,7 @@ We will be using a Arduino Pro Micro to emulate the PS3 joystick.  This will all
 * [DonkeyPart PS3/PS4 Game Controller]https://github.com/autorope/donkeypart_ps3_controller
 * Don't worry about any of the Bluetooth stuff, not using it.
 * Steering will be on Axis 0 and Throttle on Axis 4
+* We will be editing drive.py and conf.py 
 
 # Train an autopilot.
 
