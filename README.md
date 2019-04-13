@@ -38,6 +38,18 @@ sudo raspi-config
 ```bash
 sudo shutdown -r now
 ```
+7. Package Updates
+```bash
+sudo apt update
+sudo apt upgrade
+```
+8. Install Prerequisites  (possibly more than required??)
+```bash
+sudo apt-get install git
+sudo apt-get install python3 python3-pip python3-virtualenv python3-dev virtualenv
+sudo apt-get install build-essential gfortran libhdf5-dev
+```
+
 # Get driving.
 
 Run these commands to setup your donkey car app on your car's raspberry pi.
@@ -48,7 +60,7 @@ Run these commands to setup your donkey car app on your car's raspberry pi.
    source env/bin/activate
    ```
 
-2. Dowload and install the dependencies for this car template.
+2. Dowload and install the dependencies for this car template.  (This can take a LONG time . . . . )
    ```bash
    git clone https://github.com/autorope/donkey2.git
    cd donkey2
