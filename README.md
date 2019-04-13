@@ -1,11 +1,14 @@
 # Donkey 2
 
-This is the default method to use the Donkey Car. 
+This is my method to use the Donkey Car, derived from the autorope/donkey2. 
 
 * [Video tutorial.](https://www.youtube.com/watch?v=NGTbzfx7aL4&feature=youtu.be)
 * [Video showing how to create a new car with different parts](https://www.youtube.com/watch?v=xqASPxPpkw0&t=91s)
 
+# Starting a fresh Raspbian-Lite installation
 
+1. Download Raspbian-Stretch-Lite(https://www.raspberrypi.org/downloads/raspbian/)
+   Flash MicroSD card (16-32GB) using your favorite tool.  balenaEtcher(https://www.balena.io/etcher/) seems to popular.
 # Get driving.
 
 Run these commands to setup your donkey car app on your car's raspberry pi.
