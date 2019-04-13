@@ -111,4 +111,4 @@ the tubs from your car's pi to your laptop.
    ```bash
     python train.py /path/to/folder/with/tubs/*
     ```
-4.  Planning to work up some note on using Docker Tensorflow environment for training.  Stay Tuned.
+4.  Planning to work up some notes on using Docker Tensorflow environment for training.  Stay Tuned.
