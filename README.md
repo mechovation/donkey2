@@ -10,7 +10,7 @@ This is my method to use the Donkey Car, derived from the autorope/donkey2.
 1. [Download Raspbian-Stretch-Lite](https://www.raspberrypi.org/downloads/raspbian/)
 
 2. Flash MicroSD card (16-32GB) using your favorite tool.  [balenaEtcher](https://www.balena.io/etcher/) seems to be popular.
-3. Configure wireless networking, in the /boot partition create wpa_supplicant file containing:
+3. Configure wireless networking, in the /boot partition create wpa_supplicant.conf file containing:
  ```bash
  country=us
  update_config=1
