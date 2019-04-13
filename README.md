@@ -50,7 +50,7 @@ sudo apt-get install python3 python3-pip python3-virtualenv python3-dev virtuale
 sudo apt-get install build-essential gfortran libhdf5-dev
 ```
 
-# Get driving.
+# Installing Donkey 2.
 
 Run these commands to setup your donkey car app on your car's raspberry pi.
 
@@ -66,11 +66,11 @@ Run these commands to setup your donkey car app on your car's raspberry pi.
    cd donkey2
    pip install -r drive_requirements.txt
    ```
-   
-3. Run the drive script.
-   ```bash 
-   python drive.py
-   ```
+3.  Activate virtual environment on login.  Add this as the last line of your .bashrc file in your home directory
+```bash
+source env/bin/activate
+```
+
 # Setup RC Controller
 
 We will be using a Arduino Pro Micro to emulate the PS3 joystick.  This will allow the use of the RC transmitter that came with your car during training.  More details to come.
@@ -80,6 +80,14 @@ We will be using a Arduino Pro Micro to emulate the PS3 joystick.  This will all
 * Don't worry about any of the Bluetooth stuff, not using it.
 * Steering will be on Axis 0 and Throttle on Axis 4
 * We will be editing drive.py and conf.py 
+
+# Get Driving 
+   
+1. SSH to your Pi:
+2. Run the drive script.
+   ```bash 
+   python drive.py
+   ```
 
 # Train an autopilot.
 
